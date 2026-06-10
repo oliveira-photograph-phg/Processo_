@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PROCESSO — Identidade Criativa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:'Inter',sans-serif;
+background:#000;
+color:#fff;
+scroll-behavior:smooth;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+nav a{
+color:#aaa;
+margin-left:18px;
+text-decoration:none;
+font-size:13px;
+}
+nav a:hover{color:#fff}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.hero-bg{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url("hero.jpg") center/cover no-repeat;
+filter:brightness(0.5);
+z-index:0;
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+}
+
+.hero h1{
+font-size:90px;
+letter-spacing:8px;
+}
+
+.hero p{
+color:#ccc;
+margin-top:20px;
+}
+
+/* SECTIONS */
+section{
+padding:120px 10%;
+max-width:1100px;
+margin:auto;
+}
+h2{font-size:32px;margin-bottom:20px}
+p{color:#aaa;line-height:1.8}
+
+/* VIDEO */
+.video-box{
+width:100%;
+aspect-ratio:16/9;
+margin:40px 0;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.card{
+background:#0d0d0d;
+padding:25px;
+border-radius:12px;
+border:1px solid #1a1a1a;
+}
+
+/* GALERIA */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.grid img{
+width:100%;
+border-radius:10px;
+}
+
+/* TIMELINE */
+.timeline{
+border-left:2px solid #333;
+padding-left:20px;
+}
+.timeline div{
+margin-bottom:15px;
+}
+
+/* RELATÓRIO */
+.report{
+background:#0a0a0a;
+padding:30px;
+border-radius:12px;
+border:1px solid #1a1a1a;
+}
+.report h3{
+margin-top:25px;
+color:#fff;
+}
+.report ul{
+margin-top:10px;
+margin-left:20px;
+color:#aaa;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:60px;
+color:#777;
+border-top:1px solid #111;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div>PROCESSO</div>
+<div>
+<a href="#sobre">Sobre</a>
+<a href="#video">Vídeo</a>
+<a href="#making">Making</a>
+<a href="#processo">Processo</a>
+<a href="#insp">Inspiração</a>
+<a href="#cron">Cronograma</a>
+<a href="#material">Material</a>
+<a href="#galeria">Galeria</a>
+<a href="#relatorio">Relatório</a>
+<a href="#reflexao">Reflexão</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg"></div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+<h2>Sobre o Projeto</h2>
+<p>
+Este projeto consiste na criação de um vídeo cinematográfico que explora a identidade criativa através da repetição e da rotina diária.
+<br><br>
+A narrativa acompanha diferentes momentos do dia — manhã, estúdio, contexto académico e noite — representando a evolução contínua enquanto criador multimédia.
+<br><br>
+O foco principal não é apenas o resultado final, mas todo o processo necessário para lá chegar.
+</p>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+<h2>Vídeo Principal</h2>
+
+<div class="video-box">
+<iframe width="100%" height="100%"
+src="https://www.youtube-nocookie.com/embed/N4S894QzMMU"
+frameborder="0"
+allowfullscreen>
+</iframe>
+</div>
+
+<p>
+Através da repetição de ações e de uma abordagem visual minimalista, o vídeo reforça a ideia de que a consistência constrói identidade.
+</p>
+</section>
+
+<!-- MAKING -->
+<section id="making">
+<h2>Making Of</h2>
+
+<div class="video-box">
+<iframe width="100%" height="100%"
+src="https://www.youtube.com/embed/XYTVp0mO5oQ"
+title="Making Of"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
+
+<div class="cards">
+<div class="card">
+<h3>Problemas</h3>
+<p>Color grading inconsistente, ruído no áudio e dificuldades de iluminação.</p>
+</div>
+
+<div class="card">
+<h3>Soluções</h3>
+<p>Uso de microfones externos, repetição de gravações e estudo de correção de cor no DaVinci Resolve.</p>
+</div>
+
+<div class="card">
+<h3>Aprendizagem</h3>
+<p>Melhoria na captação de som, narrativa visual e consistência estética.</p>
+</div>
+</div>
+
+</section>
+
+<!-- PROCESSO -->
+<section id="processo">
+<h2>Processo Criativo</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Pré-Produção</h3>
+<p>Definição do conceito, planeamento de planos e estrutura narrativa.</p>
+</div>
+
+<div class="card">
+<h3>Produção</h3>
+<p>Captação de vídeo, áudio ambiente e repetição de ações para consistência.</p>
+</div>
+
+<div class="card">
+<h3>Pós-Produção</h3>
+<p>Edição, color grading e design de som para reforço da identidade visual.</p>
+</div>
+</div>
+
+</section>
+
+<!-- INSPIRAÇÃO -->
+<section id="insp">
+<h2>Inspiração</h2>
+<p>
+O projeto foi inspirado em conteúdos cinematográficos minimalistas, vídeos de rotina e produções focadas no processo criativo.
+<br><br>
+A estética segue uma abordagem clean, com foco em luz natural, ritmo e construção visual progressiva.
+</p>
+</section>
+
+<!-- CRONOGRAMA -->
+<section id="cron">
+<h2>Cronograma</h2>
+
+<div class="timeline">
+<div><strong>12 Fev</strong> — Ideia inicial (1h)</div>
+<div><strong>18 Fev</strong> — Desenvolvimento do conceito (2h)</div>
+<div><strong>25 Fev</strong> — Planeamento (3h)</div>
+<div><strong>10 Mar</strong> — Início gravações (5h)</div>
+<div><strong>12 Mar</strong> — Continuação (3h)</div>
+<div><strong>13 Mar</strong> — Final gravações (7h)</div>
+<div><strong>5 Abr</strong> — Edição (15h)</div>
+<div><strong>20 Abr</strong> — Ajustes finais (5h)</div>
+<div><strong>30 Abr</strong> — Finalização (4h)</div>
+<div><strong>5 Maio</strong> — Desenvolvimento site (5h)</div>
+<div><strong>16 Maio</strong> — Entrega final</div>
+</div>
+
+</section>
+
+<!-- MATERIAL -->
+<section id="material">
+<h2>Material Utilizado</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Câmaras</h3>
+<p>Canon EOS RP, Sony A7III, Sony ZV-E10</p>
+</div>
+
+<div class="card">
+<h3>Lentes</h3>
+<p>24-70mm f/2.8, 50mm f/1.8, 24-105mm</p>
+</div>
+
+<div class="card">
+<h3>Áudio</h3>
+<p>Hollyland Lark M2, Shotgun</p>
+</div>
+
+<div class="card">
+<h3>Iluminação</h3>
+<p>SoftBox (x2)</p>
+</div>
+</div>
+
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+<h2>Galeria</h2>
+
+<div class="grid">
+<img src="img1.jpg">
+<img src="img2.jpg">
+<img src="img3.jpg">
+<img src="img4.jpg">
+</div>
+
+</section>
+
+<!-- REFLEXÃO -->
+<section id="reflexao">
+<h2>Reflexão Final</h2>
+<p>
+Este projeto reforçou a importância da consistência e do processo na construção da identidade criativa.
+<br><br>
+Mais do que o resultado final, foi a evolução ao longo do percurso que teve maior impacto.
+</p>
+</section>
+
+<!-- RELATÓRIO -->
+<section id="relatorio">
+<h2>Relatório do Projeto</h2>
+
+<p><strong>Processo — Um Estudo Visual Sobre Identidade Criativa</strong></p>
+
+<br>
+
+<h3>1. Introdução</h3>
+<p>
+O presente relatório documenta de forma detalhada o desenvolvimento do projeto "Processo", realizado no âmbito da disciplina de Projeto Integrador do curso de Multimédia.
+<br><br>
+Este projeto tem como principal objetivo explorar a construção da identidade criativa através da repetição, consistência e prática contínua, utilizando o vídeo como meio principal de expressão.
+<br><br>
+Ao longo deste documento são apresentadas todas as fases do projeto, desde a conceção inicial até à sua concretização final, incluindo decisões técnicas, criativas, dificuldades encontradas e evolução ao longo do processo.
+<br><br>
+Mais do que um produto final, este projeto valoriza o percurso, o erro, a aprendizagem e o desenvolvimento pessoal enquanto criador.
+</p>
+
+<br>
+
+<h3>2. Ideia do Projeto</h3>
+<p>
+O projeto consiste na criação de um vídeo cinematográfico que retrata um dia comum, dividido em diferentes momentos, representando simbolicamente o crescimento pessoal e criativo.
+<br><br>
+A narrativa não é baseada em diálogo, mas sim em imagem, ritmo e som, permitindo uma interpretação mais sensorial e imersiva.
+<br><br>
+A principal mensagem do projeto é que:
+</p>
+
+<ul>
+<li>A identidade constrói-se ao longo do tempo</li>
+<li>O processo é mais importante do que o resultado final</li>
+<li>A repetição e a consistência são fundamentais para a evolução</li>
+</ul>
+
+<p>
+Palavras-chave associadas ao projeto:
+<br>
+Rotina • Processo • Identidade • Consistência • Evolução • Criação
+</p>
+
+<br>
+
+<h3>3. Objetivos</h3>
+
+<h4>Objetivos Técnicos</h4>
+<ul>
+<li>Melhorar a captação de imagem em contexto real</li>
+<li>Aprofundar conhecimentos em edição no DaVinci Resolve</li>
+<li>Explorar técnicas de color grading cinematográfico</li>
+<li>Desenvolver captação de áudio ambiente de qualidade</li>
+<li>Garantir consistência visual ao longo do vídeo</li>
+</ul>
+
+<h4>Objetivos Criativos</h4>
+<ul>
+<li>Criar uma narrativa visual sem recurso a diálogo</li>
+<li>Transmitir emoção através de imagem e som</li>
+<li>Explorar o conceito de identidade criativa</li>
+<li>Trabalhar ritmo, tempo e montagem</li>
+<li>Desenvolver uma linguagem visual própria</li>
+</ul>
+
+<br>
+
+<h3>4. Planeamento e Cronograma</h3>
+<p>
+O projeto foi estruturado em várias fases, permitindo uma organização eficiente do trabalho e uma evolução consistente.
+</p>
+
+<ul>
+<li><strong>12 Fev 2026:</strong> Ideia inicial (1h)</li>
+<li><strong>18 Fev:</strong> Desenvolvimento do conceito (2h)</li>
+<li><strong>25 Fev:</strong> Planeamento técnico e criativo (3h)</li>
+<li><strong>10 Mar:</strong> Início das gravações (5h)</li>
+<li><strong>12 Mar:</strong> Continuação das gravações (4h)</li>
+<li><strong>13 Mar:</strong> Finalização das gravações (6h)</li>
+<li><strong>5 Abr:</strong> Início da edição (15h)</li>
+<li><strong>20 Abr:</strong> Ajustes técnicos e criativos (5h)</li>
+<li><strong>30 Abr:</strong> Finalização do vídeo (4h)</li>
+<li><strong>5 Maio:</strong> Desenvolvimento do website (5h)</li>
+<li><strong>16 Maio:</strong> Entrega final</li>
+</ul>
+
+<p>
+Total estimado de trabalho: ~80 horas
+</p>
+
+<br>
+
+<h3>5. Vídeo Principal</h3>
+<p>
+O vídeo principal tem uma duração prevista entre 2 a 4 minutos e segue uma estrutura narrativa dividida em quatro momentos:
+</p>
+
+<ul>
+<li><strong>Manhã:</strong> Representa o início, o despertar e a preparação</li>
+<li><strong>Estúdio:</strong> Foco no processo criativo e produtividade</li>
+<li><strong>Faculdade:</strong> Contexto social e académico</li>
+<li><strong>Noite:</strong> Reflexão, descanso e sensação de conclusão</li>
+</ul>
+
+<p>
+A ausência de diálogo permite dar destaque ao som ambiente e à imagem, criando uma experiência mais imersiva e interpretativa.
+</p>
+
+<br>
+
+<h3>6. Making Of</h3>
+<p>
+O vídeo de making of tem como objetivo documentar todo o processo de criação, mostrando os bastidores e a evolução do projeto.
+</p>
+
+<ul>
+<li>Bastidores das gravações</li>
+<li>Erros e tentativas falhadas</li>
+<li>Decisões criativas</li>
+<li>Processo de edição</li>
+<li>Comparações antes/depois</li>
+</ul>
+
+<p>
+Este conteúdo é fundamental para demonstrar o pensamento crítico, a evolução técnica e a complexidade do processo criativo.
+</p>
+
+<br>
+
+<h3>7. Lista de Planos</h3>
+
+<p><strong>Manhã:</strong></p>
+<ul>
+<li>Alarme a tocar</li>
+<li>Desligar alarme</li>
+<li>Abrir persiana</li>
+<li>Abrir janela</li>
+<li>Luz natural a entrar</li>
+<li>Preparação do pequeno-almoço</li>
+</ul>
+
+<p><strong>Transição:</strong></p>
+<ul>
+<li>Sair de casa</li>
+<li>Caminho até ao estúdio</li>
+<li>Chegada</li>
+</ul>
+
+<p><strong>Estúdio:</strong></p>
+<ul>
+<li>Entrada</li>
+<li>Preparação de equipamento</li>
+<li>Edição no computador</li>
+<li>Momentos de foco</li>
+</ul>
+
+<p><strong>Faculdade:</strong></p>
+<ul>
+<li>Ambiente exterior</li>
+<li>Corredores</li>
+<li>Detalhes do espaço</li>
+</ul>
+
+<p><strong>Noite:</strong></p>
+<ul>
+<li>Relaxamento</li>
+<li>Ouvir música</li>
+<li>Plano final</li>
+</ul>
+
+<br>
+
+<h3>8. Áudio e Música</h3>
+<p>
+O áudio desempenha um papel essencial na construção da narrativa.
+</p>
+
+<ul>
+<li>Captação de sons naturais (pássaros, vento, passos)</li>
+<li>Ambiente real (teclado, objetos, movimento)</li>
+<li>Uso de música ambiente cinematográfica</li>
+</ul>
+
+<p>
+Estrutura sonora:
+</p>
+
+<ul>
+<li>Início sem música (imersão)</li>
+<li>Entrada progressiva</li>
+<li>Pico na parte do estúdio</li>
+<li>Redução gradual</li>
+<li>Final com silêncio</li>
+</ul>
+
+<br>
+
+<h3>9. Equipamento</h3>
+<ul>
+<li>Câmara: Sony A7IV</li>
+<li>Lente: 24-70mm f/2.8</li>
+<li>Áudio: Hollyland Lark M2 + Shotgun</li>
+<li>Iluminação: SoftBox Neewer</li>
+<li>Tripés e acessórios diversos</li>
+</ul>
+
+<br>
+
+<h3>10. Referências</h3>
+<p>
+O projeto inspira-se em:
+</p>
+
+<ul>
+<li>Vídeos cinematográficos minimalistas</li>
+<li>Conteúdos de rotina diária</li>
+<li>Narrativas focadas no processo criativo</li>
+<li>Estética de cinema independente</li>
+</ul>
+
+<br>
+
+<h3>11. Evolução do Projeto</h3>
+<p><strong>Versão Inicial:</strong></p>
+<ul>
+<li>Ideia geral definida</li>
+<li>Pouca estrutura narrativa</li>
+</ul>
+
+<p><strong>Versão Final:</strong></p>
+<ul>
+<li>Narrativa estruturada</li>
+<li>Melhor qualidade de imagem</li>
+<li>Áudio mais trabalhado</li>
+<li>Maior coerência visual</li>
+</ul>
+
+<br>
+
+<h3>12. Reflexão</h3>
+<p>
+Este projeto permitiu uma evolução significativa a nível técnico e criativo.
+<br><br>
+Destaca-se a importância da consistência, da repetição e do erro como parte fundamental do crescimento.
+<br><br>
+Foram desenvolvidas competências em edição, captação de áudio e construção narrativa, bem como uma maior consciência sobre o processo criativo.
+</p>
+
+<br>
+
+<h3>13. Notas Finais</h3>
+<p>
+Penso em conseguir evoluir com este trabalho, tanto como a nivel de disciplina, emprego futuro e pessoal, para uma melhor pessoa para comigo mesmo e com terceiros, e uma melhor versão de mim todos os dias
+</p>
+
+</section>
+
+<footer>
+Rafael Oliveira — Projeto Integrador — 2026
+</footer>
+
+</body>
+</html>
